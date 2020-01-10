@@ -1,0 +1,6 @@
+* Torrent to JSON
+Before I get in to too much detail, I just want to establish that this is not a serious projecct but one in which I just wanted to test various things in Go.
+** The Original Brief
+I started this project with the aim to understand how torrent files are encoded. After doing more research I found out that torrent files are not really used anymore but that magnet links are used almost exclusively.
+** What happened next
+I found that there was a useful [[https://github.com/j-muller/go-torrent-parser][repository]] that allowed me to parse Bencoded files which I could then parse into JSON. The JSON can then be written to a file. By default it is served to localhost on port 8080 but there is an option to just print it into the shell
